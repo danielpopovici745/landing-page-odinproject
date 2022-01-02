@@ -4,7 +4,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'roboto', sans-serif;
-    height: 100vh;
+    height: 100%;
 }
 
 button{
@@ -15,6 +15,7 @@ p{
     margin: 0;
     padding: 0;
     font-size: 18px;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5{
@@ -36,6 +37,7 @@ h1, h2, h3, h4, h5{
     background-color: #1F2937;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 75px;
 }
 
 .intro h2{
@@ -75,7 +77,6 @@ h1, h2, h3, h4, h5{
 
 .intro-message{
     display: flex;
-    padding-bottom: 75px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -126,6 +127,7 @@ h1, h2, h3, h4, h5{
 .cards-container{
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
     padding-bottom: 75px;
 }
 
@@ -140,7 +142,6 @@ h1, h2, h3, h4, h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
     margin: 0;
     font-size: 36px;
     font-weight: 800;
@@ -151,7 +152,6 @@ h1, h2, h3, h4, h5{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 800px;
     margin: 0;
     padding: 0;
 }
@@ -183,18 +183,21 @@ h1, h2, h3, h4, h5{
     display: flex;
     background-color: #e5e7eb;
     justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .quote{
     display: flex;
-    flex: 0 0 auto;
-    width: 800px;
+    max-width: 800px;
+    flex: 0 1 auto;
     flex-direction: column;
-    padding: 50px;
+
 }
 
 .quote-text{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .quote-text p{
@@ -218,14 +221,17 @@ h1, h2, h3, h4, h5{
 .banner-container{
     display: flex;
     justify-content: space-around;
-    padding: 75px;
+    align-items: center;
+    align-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .banner{
     display: flex;
     justify-content:center;
-    width: 800px;
-    flex: 0 0 auto;
+    max-width: 800px;
+    flex: 1 1 auto;
     background-color: #3882F6;
     border-radius: 10px;
     padding: 30px 0px 30px 0px;
@@ -233,9 +239,10 @@ h1, h2, h3, h4, h5{
 
 .banner-content{
     display: flex;
-    width: 700px;
-    flex: 0 0 auto;
+    max-width: 700px;
+    flex: 1 1 auto;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .banner-content h5{
@@ -245,7 +252,7 @@ h1, h2, h3, h4, h5{
 .banner-text{
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     gap: 2px;
 }
 
@@ -259,7 +266,7 @@ h1, h2, h3, h4, h5{
 
 .button-container{
     display: flex;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     justify-content: center;
     align-items: center;
 }
@@ -276,6 +283,7 @@ h1, h2, h3, h4, h5{
     border-radius: 5px;
     border: 2px solid #e5e7eb;
     color: #F9FAF8;
+    flex: 0 1 auto;
 }
 
 .banner-button:hover{
